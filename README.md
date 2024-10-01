@@ -5,6 +5,7 @@ Runs the Java 8 regex matcher and prints the match information in TOML format.
 ## Build
 
 ```bash
+source set_env_vars.sh
 make
 ```
 
