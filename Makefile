@@ -1,5 +1,5 @@
 Java8Runner.class:
-	javac Java8Runner.java
+	javac8 Java8Runner.java
 
 clean:
 	rm -f *.class
