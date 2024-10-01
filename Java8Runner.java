@@ -10,17 +10,17 @@ public class Java8Runner {
     }
     Matcher matcher = Pattern.compile(args[0]).matcher(args[1]);
     if (matcher.find()) {
-      System.out.println("[match_1]");
+      System.out.println("[match_1]\n");
       MatchResult result = matcher.toMatchResult();
       for (int i = 0; i <= result.groupCount(); i++) {
-        System.out.printf("\n[match_1.group_%d]\n", i);
+        System.out.printf("[match_1.group_%d]\n", i);
         String group = result.group(i);
         if (group == null) {
           System.out.println("# not captured");
           continue;
         } else {
           System.out.printf("span = [%d, %d]\n", result.start(i), result.end(i));
-          System.out.printf("str = '''%s'''\n", result.group(i));
+          System.out.printf("str = '''%s'''\n\n", result.group(i));
         }
       }
     } else {
